@@ -16,7 +16,11 @@ export const SITE_CONFIG = {
   googleAnalytics: 'UA-69281367-1',
   wordsPerMinute: 200,
   pageSize: 25,
-  algolia: false,
+  algolia: {
+    applicationId: '08WJSG8GMW',
+    indexName: 'jasper2',
+    searchOnlyApiKey: '899d0b22cae5a8affeb4f1f9f35adcc4',
+  },
 };
 
 /**
