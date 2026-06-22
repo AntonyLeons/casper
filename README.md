@@ -1,5 +1,5 @@
 # Casper Astro ⚡ [![Netlify Status](https://api.netlify.com/api/v1/badges/8150a992-e702-4ebe-927f-8729c808a5b6/deploy-status)](https://app.netlify.com/projects/casperastro/deploys) [![Deploy to GitHub Pages](https://github.com/AntonyLeons/casper/actions/workflows/deploy.yml/badge.svg)](https://github.com/AntonyLeons/casper/actions/workflows/deploy.yml)
-A modernized, high-performance port of Ghost's default theme [Casper 2.0](https://github.com/tryghost/casper) built on top of **Astro 6**.
+A modernized, high-performance port of Ghost's default theme [Casper 2.0](https://github.com/tryghost/casper) built on top of **Astro 7**.
 
 This port replaces the original Jekyll setup (`jasper2`), offering incredibly fast builds, type-safe content validation, server-side pre-rendering, and client-side page load times.
 
@@ -11,7 +11,7 @@ Deploy your own copy of this blog template to the cloud with a single click:
 
 ## 🚀 Key Features
 
-- **Astro 6 & TypeScript**: Full TypeScript configuration and strict schema validations.
+- **Astro 7 & TypeScript**: Full TypeScript configuration and strict schema validations.
 - **Type-Safe Content Schema**: Powered by Astro Content Collections and Zod to validate posts, tags, and authors.
 - **Modern Asset Pipeline**: Stylesheets are bundled, minified, and optimized via Vite out of the box.
 - **Zero-Dependency Vanilla JS Interactivity**: Ported jQuery scripts (infinite scrolling, scroll progress bar, and floating headers) to clean, performant **Vanilla JS**, and replaced FitVids with a native, zero-JS **CSS aspect-ratio** solution.
@@ -58,7 +58,7 @@ The output will be generated inside the `dist/` directory.
 
 ## 📂 Project Structure
 
-- `src/content.config.ts`: Configuration file defining content validation schemas and loaders for Astro 6.
+- `src/content.config.ts`: Configuration file defining content validation schemas and loaders for Astro 7.
 - `src/content/posts/`: Contains all Markdown (`.md`) articles. Add new blog posts here.
 - `src/content/authors/`: Contains JSON files for each author (e.g. `ghost.json` defining name, bio, location, and social profiles).
 - `src/content/tags/`: Contains JSON files for tags (e.g. `fables.json` defining name, description, and cover images).
