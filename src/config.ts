@@ -42,7 +42,11 @@ export function getAssetUrl(path: string | null | undefined): string {
 export function getExcerpt(content: string, limit = 33): string {
   const stripped = content
     .replace(/<[^>]*>/g, '') // strip HTML tags
-    .replace(/[#*`_\[\]()\-+!]/g, '') // strip simple markdown symbols
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1') // keep image alt text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // keep link text
+    .replace(/^#{1,6}\s+/gm, '') // strip heading markers
+    .replace(/[*`_>~]/g, '') // strip simple markdown symbols
+    .replace(/^\s*[-+]\s+/gm, '') // strip unordered list markers
     .replace(/\s+/g, ' ') // normalize whitespace
     .trim();
   const words = stripped.split(' ');
