@@ -190,7 +190,7 @@ const isDisqusEnabled = disqus !== false && SITE_CONFIG.disqus;
         <div class="inner">
             <div class="read-next-feed">
                 <!-- Related posts card -->
-                {relatedCount > 1 && primaryTag && (
+                {relatedCount > 0 && primaryTag && (
                     <article class="read-next-card" style={SITE_CONFIG.cover ? `background-image: url(${getAssetUrl(SITE_CONFIG.cover)})` : cover ? `background-image: url(${getAssetUrl(cover)})` : ''}>
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; {SITE_CONFIG.title} &mdash;</small>
@@ -208,7 +208,7 @@ const isDisqusEnabled = disqus !== false && SITE_CONFIG.disqus;
                         </div>
                         <footer class="read-next-card-footer">
                             <a href={getAssetUrl(`/tag/${primaryTag.toLowerCase().replace(/\s+/g, '-')}/`)}>
-                                {relatedCount > 1 ? `See all ${relatedCount - 1} posts →` : '1 post →'}
+                                See {relatedCount > 1 ? `all ${relatedCount} related posts →` : '1 related post →'}
                             </a>
                         </footer>
                     </article>
