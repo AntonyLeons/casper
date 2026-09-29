@@ -14,7 +14,7 @@
     "astro": "^7.2.8"
   },
   "devDependencies": {
-    "js-yaml": "^5.2.2",
+    "js-yaml": "^5.4.1",
     "typescript": "^7.0.2"
   },
   "engines": {
