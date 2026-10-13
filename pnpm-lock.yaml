@@ -16,8 +16,8 @@ importers:
         version: 7.2.8(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)
     devDependencies:
       js-yaml:
-        specifier: ^5.2.2
-        version: 5.2.2
+        specifier: ^5.4.1
+        version: 5.4.1
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
@@ -1054,8 +1054,8 @@ packages:
     resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
     hasBin: true
 
-  js-yaml@5.2.2:
-    resolution: {integrity: sha512-dayzUzKkJ1MkuUtZglSebU43utNXH0OWQByK9rKOOuYIO8M5TV1y+n8ALMdG0rdzBnfNkOmZEqrURepb0ejqBw==}
+  js-yaml@5.4.1:
+    resolution: {integrity: sha512-28R/k+NAjeuf7+CKlTxWZVExJGwVVLwY06DgEnOMz2gEpfNkDcD7QvyiVPT0xy0XXhU8vHsd4Ot42OOPdJG7dQ==}
     hasBin: true
 
   jsonc-parser@3.3.1:
@@ -2432,7 +2432,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  js-yaml@5.2.2:
+  js-yaml@5.4.1:
     dependencies:
       argparse: 2.0.1
 
